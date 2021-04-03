@@ -20,20 +20,6 @@ const fetchContacts = () => dispatch => {
         .catch (error => dispatch(fetchContactError(error.message)));
 };
 
-// Option with async/await, try/catch
-
-// const fetchContacts = () => async dispatch => {
-//     dispatch(fetchContactRequest());
-
-//     try {
-//         const { data } = await axios.get('/contacts');
-
-//         dispatch(fetchContactSuccess(data));
-//     } catch (error) {
-//         dispatch(fetchContactSuccess(error));
-//     }
-// }
-
 const addContact = (name, number) => dispatch => {
     const contact = {
         name,

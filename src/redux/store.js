@@ -1,5 +1,4 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'; 
-//import logger from 'redux-logger';
 import {
   persistStore,
   persistReducer,
@@ -20,7 +19,6 @@ const middleware = [
       ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
     },
   }),
- // logger,
 ];
 
 const authPersistConfig = {
@@ -40,5 +38,4 @@ const store = configureStore({
 
 const persistor = persistStore(store);
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default { store, persistor };

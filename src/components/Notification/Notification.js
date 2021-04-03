@@ -29,20 +29,6 @@ export default function Notification({message}) {
             }, 2500);
     }, [errorPb, clearErrorPb]);
 
-    // componentDidUpdate() {
-    //      if (errorAuth) {
-    //         setTimeout(() => {
-    //             clearErrorAuth(this.state);
-    //         }, 2500);
-    //          return;
-    //     }
-    //        if (errorPb) {
-    //         setTimeout(() => {
-    //             clearErrorPb(this.state);
-    //         }, 2500);
-    //          return;
-    //     }
-    // }
     
         return (
             <CSSTransition

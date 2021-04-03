@@ -18,25 +18,9 @@ export default function UserMenu() {
   <div className="MenuContainer">
     <img src={defaultAvatar} alt="" width="32" className="MenuAvatar" />
     <span className="MenuName">Welcome, {name}</span>
-{/* My button
-    <button className="MenuButton" type="button" onClick={onLogout}>
-      Logout
-    </button> */}
-
-    {/* Button from Material UI */}
     <ButtonMenu onClick={onLogOut} />
   </div>
   );
 };
 
-// const mapStateToProps = state => ({
-//   name: authSelectors.getUsername(state),
-//   avatar: defaultAvatar,
-// });
-
-// const mapDispatchToProps = {
-//   onLogout: authOperations.logOut,
-// };
-
-//  connect(mapStateToProps, mapDispatchToProps)(UserMenu);
 

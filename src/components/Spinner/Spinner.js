@@ -7,8 +7,8 @@ const Spinner = () => {
     return (
         <div className="Loader">
              <Loader
-                 type="TailSpin"
-                 color="#3f51b5"
+                 type="ThreeDots"
+                 color="00BFFF"
                  height={100}
                  width={100}
                 timeout={300} 
